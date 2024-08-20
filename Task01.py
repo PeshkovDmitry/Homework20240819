@@ -82,7 +82,7 @@ def save_results_to_json(file_list, path):
 
 def save_results_to_csv(file_list, path):
     with open(path, 'w', newline='') as f:
-        writer = csv.writer(f, delimiter=';')
+        writer = csv.writer(f)
         if file_list:
             writer.writerow(file_list[0].keys())
         for file in file_list:
@@ -94,7 +94,7 @@ def save_results_to_pickle(file_list, path):
         pickle.dump(file_list, f)
 
 
-directory = "/home/dmitry/PHP"
+directory = os.getcwd()
 file_list = traverse_directory(directory)
 save_results_to_json(file_list, 'result.json')
 save_results_to_csv(file_list, 'result.csv')

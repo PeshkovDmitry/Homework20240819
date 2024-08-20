@@ -1,1 +1,372 @@
-[]
+[
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\result.csv",
+    "Type": "File",
+    "Size": 0
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\result.json",
+    "Type": "File",
+    "Size": 2
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\result.pickle",
+    "Type": "File",
+    "Size": 5
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\Task01.py",
+    "Type": "File",
+    "Size": 5381
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\Task01.txt",
+    "Type": "File",
+    "Size": 16699
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\Task02.py",
+    "Type": "File",
+    "Size": 0
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\Task_01_1.txt",
+    "Type": "File",
+    "Size": 12444
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git",
+    "Type": "Directory",
+    "Size": 41997
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea",
+    "Type": "Directory",
+    "Size": 5212
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\COMMIT_EDITMSG",
+    "Type": "File",
+    "Size": 41
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\config",
+    "Type": "File",
+    "Size": 340
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\description",
+    "Type": "File",
+    "Size": 73
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\HEAD",
+    "Type": "File",
+    "Size": 23
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\index",
+    "Type": "File",
+    "Size": 1199
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\packed-refs",
+    "Type": "File",
+    "Size": 114
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks",
+    "Type": "Directory",
+    "Size": 23513
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\info",
+    "Type": "Directory",
+    "Size": 240
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs",
+    "Type": "Directory",
+    "Size": 1127
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects",
+    "Type": "Directory",
+    "Size": 15213
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs",
+    "Type": "Directory",
+    "Size": 114
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\applypatch-msg.sample",
+    "Type": "File",
+    "Size": 478
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\commit-msg.sample",
+    "Type": "File",
+    "Size": 896
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\fsmonitor-watchman.sample",
+    "Type": "File",
+    "Size": 4726
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\post-update.sample",
+    "Type": "File",
+    "Size": 189
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-applypatch.sample",
+    "Type": "File",
+    "Size": 424
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-commit.sample",
+    "Type": "File",
+    "Size": 1643
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-merge-commit.sample",
+    "Type": "File",
+    "Size": 416
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-push.sample",
+    "Type": "File",
+    "Size": 1374
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-rebase.sample",
+    "Type": "File",
+    "Size": 4898
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\pre-receive.sample",
+    "Type": "File",
+    "Size": 544
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\prepare-commit-msg.sample",
+    "Type": "File",
+    "Size": 1492
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\push-to-checkout.sample",
+    "Type": "File",
+    "Size": 2783
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\hooks\\update.sample",
+    "Type": "File",
+    "Size": 3650
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\info\\exclude",
+    "Type": "File",
+    "Size": 240
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\HEAD",
+    "Type": "File",
+    "Size": 387
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs",
+    "Type": "Directory",
+    "Size": 740
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\heads",
+    "Type": "Directory",
+    "Size": 387
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\remotes",
+    "Type": "Directory",
+    "Size": 353
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\heads\\master",
+    "Type": "File",
+    "Size": 387
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\remotes\\origin",
+    "Type": "Directory",
+    "Size": 353
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\remotes\\origin\\HEAD",
+    "Type": "File",
+    "Size": 202
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\logs\\refs\\remotes\\origin\\master",
+    "Type": "File",
+    "Size": 151
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\06",
+    "Type": "Directory",
+    "Size": 17
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\35",
+    "Type": "Directory",
+    "Size": 204
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\3f",
+    "Type": "Directory",
+    "Size": 211
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\7b",
+    "Type": "Directory",
+    "Size": 1816
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\92",
+    "Type": "Directory",
+    "Size": 20
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\db",
+    "Type": "Directory",
+    "Size": 180
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\e8",
+    "Type": "Directory",
+    "Size": 231
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\info",
+    "Type": "Directory",
+    "Size": 0
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\pack",
+    "Type": "Directory",
+    "Size": 12534
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\06\\37a088a01e8ddab3bf3fa98dbe804cbde1a0dc",
+    "Type": "File",
+    "Size": 17
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\35\\ac7834660dc62a47290adef9ac3087302a3e35",
+    "Type": "File",
+    "Size": 204
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\3f\\6936c4fd3876a936deaec75fa85142b4fa8459",
+    "Type": "File",
+    "Size": 211
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\7b\\789caf5ad81e73b0e7653bae96864a87410066",
+    "Type": "File",
+    "Size": 1816
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\92\\c3c883eb886f2267599fa700ed581f787db7f2",
+    "Type": "File",
+    "Size": 20
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\db\\8786c06ed9719181cd25ebe2615cc99c8490eb",
+    "Type": "File",
+    "Size": 180
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\e8\\aa7d96174412cb2e6435f75813456f513cb5a2",
+    "Type": "File",
+    "Size": 231
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\pack\\pack-37fd25fbe07d1f9886f89969e331215778153b00.idx",
+    "Type": "File",
+    "Size": 1772
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\objects\\pack\\pack-37fd25fbe07d1f9886f89969e331215778153b00.pack",
+    "Type": "File",
+    "Size": 10762
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\heads",
+    "Type": "Directory",
+    "Size": 41
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\remotes",
+    "Type": "Directory",
+    "Size": 73
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\tags",
+    "Type": "Directory",
+    "Size": 0
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\heads\\master",
+    "Type": "File",
+    "Size": 41
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\remotes\\origin",
+    "Type": "Directory",
+    "Size": 73
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\remotes\\origin\\HEAD",
+    "Type": "File",
+    "Size": 32
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.git\\refs\\remotes\\origin\\master",
+    "Type": "File",
+    "Size": 41
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\Homework20240819.iml",
+    "Type": "File",
+    "Size": 362
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\misc.xml",
+    "Type": "File",
+    "Size": 284
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\modules.xml",
+    "Type": "File",
+    "Size": 291
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\vcs.xml",
+    "Type": "File",
+    "Size": 185
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\workspace.xml",
+    "Type": "File",
+    "Size": 3911
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\inspectionProfiles",
+    "Type": "Directory",
+    "Size": 179
+  },
+  {
+    "Path": "C:\\Users\\\u0414\u0438\u043c\u0430\\PycharmProjects\\Homework20240819\\.idea\\inspectionProfiles\\profiles_settings.xml",
+    "Type": "File",
+    "Size": 179
+  }
+]

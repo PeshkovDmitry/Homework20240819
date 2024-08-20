@@ -65,23 +65,23 @@ def traverse_directory(directory: str) -> list:
 def get_dir_size(path: str) -> int:
     size = 0
     for root, dirs, files in os.walk(path):
-        size += os.path.getsize(root)
+        # size += os.path.getsize(root)
         for name in files:
             path = os.path.join(root, name)
             size += os.path.getsize(path)
-        for name in dirs:
-            path = os.path.join(root, name)
-            size += os.path.getsize(path)
+        # for name in dirs:
+        #     path = os.path.join(root, name)
+        #     size += os.path.getsize(path)
     return size
 
 
-def save_results_to_json(file_list):
-    with open('result.json', 'w') as f:
+def save_results_to_json(file_list, path):
+    with open(path, 'w') as f:
         json.dump(file_list, f, ensure_ascii=True, indent=2)
 
 
-def save_results_to_csv(file_list):
-    with open('result.csv', 'w', newline='') as f:
+def save_results_to_csv(file_list, path):
+    with open(path, 'w', newline='') as f:
         writer = csv.writer(f, delimiter=';')
         if file_list:
             writer.writerow(file_list[0].keys())
@@ -89,13 +89,13 @@ def save_results_to_csv(file_list):
             writer.writerow(file.values())
 
 
-def save_results_to_pickle(file_list):
-    with open('result.pickle', 'wb') as f:
+def save_results_to_pickle(file_list, path):
+    with open(path, 'wb') as f:
         pickle.dump(file_list, f)
 
 
 directory = "/home/dmitry/PHP"
 file_list = traverse_directory(directory)
-save_results_to_json(file_list)
-save_results_to_csv(file_list)
-save_results_to_pickle(file_list)
+save_results_to_json(file_list, 'result.json')
+save_results_to_csv(file_list, 'result.csv')
+save_results_to_pickle(file_list, 'result.pickle')

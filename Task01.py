@@ -43,6 +43,9 @@
 """
 
 import os
+import json
+import csv
+import pickle
 
 
 def traverse_directory(directory: str) -> list:
@@ -72,7 +75,26 @@ def get_dir_size(path: str) -> int:
     return size
 
 
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
 directory = "/home/dmitry/PHP"
-files = traverse_directory(directory)
-for file in files:
-    print(file)
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)

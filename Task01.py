@@ -41,3 +41,38 @@
 Информация о директории добавляется в список results в виде словаря
 {'Path': path, 'Type': 'Directory', 'Size': size}.
 """
+
+import os
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+directory = "/home/dmitry/PHP"
+files = traverse_directory(directory)
+for file in files:
+    print(file)

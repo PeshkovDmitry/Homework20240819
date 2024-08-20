@@ -1,0 +1,462 @@
+Не все тесты пройдены, есть ошибки :(
+
+
+Количество затраченных попыток: 1
+
+Время выполнения: 2.766112 сек
+
+Общая статистика
+
+Всего тестов: 5. Пройдено: 0. Не пройдено: 5.
+
+Подробную информацию по каждому тесту смотрите ниже.
+Тест 1
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+# Введите ваше решение ниже
+
+import os
+import json
+import csv
+import pickle
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        if file_list:
+            writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
+directory = "/home/dmitry/PHP"
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)
+
+
+directory = 'geekbrains'
+results = traverse_directory(directory)
+print(results)
+
+
+
+Ожидаемый ответ:
+
+[{'Path': 'geekbrains/california_housing_train.csv', 'Type': 'File', 'Size': 1457}, {'Path': 'geekbrains/student_performance.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/covid.json', 'Type': 'File', 'Size': 35228079}, {'Path': 'geekbrains/input2.txt', 'Type': 'File', 'Size': 9}, {'Path': 'geekbrains/avg_list.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/age_report.csv', 'Type': 'File', 'Size': 85}, {'Path': 'geekbrains/my_ds_projects', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+
+Ваш ответ:
+
+[{'Path': 'geekbrains/california_housing_train.csv', 'Type': 'File', 'Size': 1457}, {'Path': 'geekbrains/student_performance.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/covid.json', 'Type': 'File', 'Size': 35228079}, {'Path': 'geekbrains/input2.txt', 'Type': 'File', 'Size': 9}, {'Path': 'geekbrains/avg_list.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/age_report.csv', 'Type': 'File', 'Size': 85}, {'Path': 'geekbrains/my_ds_projects', 'Type': 'Directory', 'Size': 20651}, {'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 12459}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 4267}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+Тест 2
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+# Введите ваше решение ниже
+
+import os
+import json
+import csv
+import pickle
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        if file_list:
+            writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
+directory = "/home/dmitry/PHP"
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)
+
+
+directory = 'geekbrains/my_ds_projects'
+results = traverse_directory(directory)
+print(results)
+
+
+
+Ожидаемый ответ:
+
+[{'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+
+Ваш ответ:
+
+[{'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 12459}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 4267}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+Тест 3
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+# Введите ваше решение ниже
+
+import os
+import json
+import csv
+import pickle
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        if file_list:
+            writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
+directory = "/home/dmitry/PHP"
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)
+
+
+directory = 'geekbrains'
+results = traverse_directory(directory)
+save_results_to_json(results, 'results.json')
+
+with open('results.json', 'r') as f:
+    data = json.load(f)
+
+print(data)
+
+
+
+Ожидаемый ответ:
+
+[{'Path': 'geekbrains/california_housing_train.csv', 'Type': 'File', 'Size': 1457}, {'Path': 'geekbrains/student_performance.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/covid.json', 'Type': 'File', 'Size': 35228079}, {'Path': 'geekbrains/input2.txt', 'Type': 'File', 'Size': 9}, {'Path': 'geekbrains/avg_list.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/age_report.csv', 'Type': 'File', 'Size': 85}, {'Path': 'geekbrains/my_ds_projects', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+
+Ошибка:
+
+Traceback (most recent call last):
+  File "LHKMW7BU6JJDXESTFDIO.py", line 70, in <module>
+    save_results_to_json(results, 'results.json')
+TypeError: save_results_to_json() takes 1 positional argument but 2 were given
+Тест 4
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+# Введите ваше решение ниже
+
+import os
+import json
+import csv
+import pickle
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        if file_list:
+            writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
+directory = "/home/dmitry/PHP"
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)
+
+
+directory = 'geekbrains'
+results = traverse_directory(directory)
+save_results_to_csv(results, 'results.csv')
+
+with open('results.csv', 'r', newline='') as f:
+    reader = csv.reader(f)
+    data = [row for row in reader]
+
+print(data)
+
+
+
+Ожидаемый ответ:
+
+[['Path', 'Type', 'Size'], ['geekbrains/california_housing_train.csv', 'File', '1457'], ['geekbrains/student_performance.txt', 'File', '21'], ['geekbrains/covid.json', 'File', '35228079'], ['geekbrains/input2.txt', 'File', '9'], ['geekbrains/avg_list.txt', 'File', '21'], ['geekbrains/age_report.csv', 'File', '85'], ['geekbrains/my_ds_projects', 'Directory', '171'], ['geekbrains/my_ds_projects/My-code', 'Directory', '171'], ['geekbrains/my_ds_projects/My-code/GB_data', 'Directory', '171'], ['geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'File', '101'], ['geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'File', '70']]
+
+Ошибка:
+
+Traceback (most recent call last):
+  File "N75GR1C2L69W7U4L5ETD.py", line 70, in <module>
+    save_results_to_csv(results, 'results.csv')
+TypeError: save_results_to_csv() takes 1 positional argument but 2 were given
+Тест 5
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+# Введите ваше решение ниже
+
+import os
+import json
+import csv
+import pickle
+
+
+def traverse_directory(directory: str) -> list:
+    result = []
+    for root, dirs, files in os.walk(directory):
+        for name in files:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'File', 'Size': os.path.getsize(path)}
+            result.append(info)
+        for name in dirs:
+            path = os.path.join(root, name)
+            info = {'Path': path, 'Type': 'Directory', 'Size': get_dir_size(path)}
+            result.append(info)
+    return result
+
+
+def get_dir_size(path: str) -> int:
+    size = 0
+    for root, dirs, files in os.walk(path):
+        size += os.path.getsize(root)
+        for name in files:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+        for name in dirs:
+            path = os.path.join(root, name)
+            size += os.path.getsize(path)
+    return size
+
+
+def save_results_to_json(file_list):
+    with open('result.json', 'w') as f:
+        json.dump(file_list, f, ensure_ascii=True, indent=2)
+
+
+def save_results_to_csv(file_list):
+    with open('result.csv', 'w', newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        if file_list:
+            writer.writerow(file_list[0].keys())
+        for file in file_list:
+            writer.writerow(file.values())
+
+
+def save_results_to_pickle(file_list):
+    with open('result.pickle', 'wb') as f:
+        pickle.dump(file_list, f)
+
+
+directory = "/home/dmitry/PHP"
+file_list = traverse_directory(directory)
+save_results_to_json(file_list)
+save_results_to_csv(file_list)
+save_results_to_pickle(file_list)
+
+
+directory = 'geekbrains'
+results = traverse_directory(directory)
+save_results_to_pickle(results, 'results.pkl')
+
+with open('results.pkl', 'rb') as f:
+    data = pickle.load(f)
+
+print(data)
+
+
+
+Ожидаемый ответ:
+
+[{'Path': 'geekbrains/california_housing_train.csv', 'Type': 'File', 'Size': 1457}, {'Path': 'geekbrains/student_performance.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/covid.json', 'Type': 'File', 'Size': 35228079}, {'Path': 'geekbrains/input2.txt', 'Type': 'File', 'Size': 9}, {'Path': 'geekbrains/avg_list.txt', 'Type': 'File', 'Size': 21}, {'Path': 'geekbrains/age_report.csv', 'Type': 'File', 'Size': 85}, {'Path': 'geekbrains/my_ds_projects', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data', 'Type': 'Directory', 'Size': 171}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/fruits.csv', 'Type': 'File', 'Size': 101}, {'Path': 'geekbrains/my_ds_projects/My-code/GB_data/list_of_names.txt', 'Type': 'File', 'Size': 70}]
+
+Ошибка:
+
+Traceback (most recent call last):
+  File "M5FONYYY1XK4IGHOWBZ0.py", line 70, in <module>
+    save_results_to_pickle(results, 'results.pkl')
+TypeError: save_results_to_pickle() takes 1 positional argument but 2 were given

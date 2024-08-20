@@ -83,7 +83,8 @@ def save_results_to_json(file_list):
 def save_results_to_csv(file_list):
     with open('result.csv', 'w', newline='') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow(file_list[0].keys())
+        if file_list:
+            writer.writerow(file_list[0].keys())
         for file in file_list:
             writer.writerow(file.values())
 
